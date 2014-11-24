@@ -8,20 +8,20 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dropnet.github.io", "http:/
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_1969"
-		Debug.AspNetCompiler.PhysicalPath = "F:\TEMP\Github\dropnet.github.io\"
+		Debug.AspNetCompiler.PhysicalPath = "..\dropnet.github.io\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1969\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_1969"
-		Release.AspNetCompiler.PhysicalPath = "F:\TEMP\Github\dropnet.github.io\"
+		Release.AspNetCompiler.PhysicalPath = "..\dropnet.github.io\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1969\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "F:\TEMP\Github\dropnet.github.io\"
+		SlnRelativePath = "..\dropnet.github.io\"
 	EndProjectSection
 EndProject
 Global
