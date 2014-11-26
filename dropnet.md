@@ -84,26 +84,6 @@ _client.UserLogin = new UserLogin { Token = "USER TOKEN", Secret = "USER SECRET"
 
 <p>&#160;</p>
 
-<h4>Create Account:</h4>
-
-<p>This function creates a new account on Dropbox with the default free account.</p>
-
-{% highlight csharp %}// Sync
-_client.CreateAccount("test@example.com", "John", "Smith", "password");
-
-// Async
-_client.CreateAccountAsync("test@example.com", "John", "Smith", "password",
-    (response) =>
-    {
-        //Do something on success
-    },
-    (error) =>
-    {
-        //Do something on error
-    });{% endhighlight %}
-
-<h4>&#160;</h4>
-
 <h4>Get MetaData:</h4>
 
 <p>The Dropbox API uses Metadata to navigate through the its folder structure. Metadata gives us access to file and folder details (such as modified dates, file size, folder contents, etc.)</p>
@@ -295,107 +275,8 @@ _client.GetMediaAsync("/Temp/AwesomeVideo1.mp4",
         //Do something on error
     });{% endhighlight %}
 
-<h3>Whats using it?</h3>
-
-<ul>
-  <li><a href="http://dkdevelopment.net/boxshot">BoxShot</a> (<a href="http://windowsphone.com/s?appid=0be109c4-08be-4ac3-a96b-70ef2b0580e3">Marketplace</a>) </li>
-  <li><a href="http://windowsphone.com/s?appid=9c462a42-0086-e011-986b-78e7d1fa76f8">DropNotes</a> </li>
-  <li><a href="http://7pass.wordpress.com/">7Pass</a> </li>
-  <li><a href="http://cronoslabs.com/datahub">DataHub</a> </li>
-  <li><a href="http://devtyr.norberteder.com/post/WP7-Working-Hours-Tracker-1000.aspx">Working Hours Tracker</a> (<a href="http://www.windowsphoneapplist.com/working_hours_tracker-a19523.html">English</a>) </li>
-  <li><a href="http://ftsmind.flisting.de/">FtsMind</a> (<a href="http://windowsphone.com/s?appid=46715ad5-0d89-e011-986b-78e7d1fa76f8">Marketplace</a>)</li>
-  <li><a href="http://windowsphone.com/s?appid=b7be85a3-d21e-4d1b-bb69-6d58600e6926">AReader</a></li>
-  <li><a href="http://windowsphone.com/s?appid=90395b3a-326a-e011-81d2-78e7d1fa76f8">SmartList</a></li>
-  <li><a href="http://www.maaloo.net/">maaloo7</a></li>
-  <li><a href="http://cloudyboxapp.com/">Cloudy Box</a></li>
-  <li><a href="https://www.getosmosis.com/blog/show/dropbox-integration">Osmosis</a></li>
-</ul>
-
 <p>&#160;</p>
 
 <p>Made something with DropNet? Tell me about it and I’ll list it here. (<a href="http://twitter.com/dkarzon">@dkarzon</a>)</p>
 
-<p>If you have any questions about DropNet feel free to drop by the JabbR room - <a href="http://jabbr.net/#/rooms/DropNet">http://jabbr.net/#/rooms/DropNet</a></p>
-
-<script src="http://pollfu.com/public/js/embed.v1.js" data-id="A"> </script>
-
-<br />
-
-<p>&#160;</p>
-
-<h3>Change log</h3>
-
-<p><strong>v1.9.3 (7 April 2012)</strong></p>
-<ul>
-  <li>Updated RestSharp base (no longer requires Json.Net)</li>
-  <li>Removed Windows Phone 7.0 Project</li>
-</ul>
-
-<p><strong>v1.9.2 (22 March 2012)</strong></p>
-<ul>
-  <li>Fixed a bug in PLAINTEXT authentication causing issues getting tokens </li>
-</ul>
-
-<p><strong>v1.9.1 (13 March 2012)</strong></p>
-<ul>
-  <li>Updated authentication to use PLAINTEXT over HTTPS (slight performance increase) </li>
-</ul>
-
-<p><strong>v1.9 (6 March 2012)</strong></p>
-<ul>
-  <li>Fixed Content Url issues </li>
-  <li>Updated internals to use 2 instances of the RestClient for the different base Urls. </li>
-</ul>
-
-<p><strong>v1.8.4 (20 February 2012)</strong></p>
-<ul>
-  <li>Added Search function </li>
-  <li>Added BETA delta function (Dev Keys and app folder only) </li>
-  <li>Updated Json.Net reference to v4.0.8 </li>
-</ul>
-
-<p><strong>v1.8.3 (21 January 2012)</strong></p>
-<ul>
-  <li>Fixed the Newtonsoft.Json reference to force the specific version (Currently v4.0.5) </li>
-  <li>Added support for the media function (GetMedia and GetMedia Async) </li>
-</ul>
-
-<p><strong>v1.8.2 (21 December 2011)</strong></p>
-<ul>
-  <li>Added GetThumbnail functions to get a thumbnail of an image </li>
-  <li>Added support for Sandbox mode </li>
-</ul>
-
-<p><strong>v1.8.1 (28 November 2011)</strong></p>
-<ul>
-  <li>Took out the NuGet reference to RestSharp so I could include my own custom build of it (to fix file uploads) </li>
-  <li>Fixed bug: International characters (for real this time) </li>
-  <li>Fixed spelling of BuildAuthorizeUrl method </li>
-  <li>Added a WP7 Sample project (Current functionality is login and list root contents) <a href="https://github.com/dkarzon/DropNet/blob/master/DropNet.Samples/DropNet.Samples.WP7/MainPage.xaml.cs">[Github]</a> </li>
-  <li>Updated Upload functions to return the new files MetaData (as given off by the API) </li>
-</ul>
-
-<p><strong>v1.8 (3 November 2011)</strong></p>
-<ul>
-  <li>Updated to v1 of the Dropbox API (new authentication process) </li>
-  <li>Fixed bug: Foreign languages in file/folder names (actually this time) </li>
-  <li>Fixed NuGet package to get RestSharp v101.3 (until I fix the update) </li>
-</ul>
-
-<p><strong>v1.6 (25 August 2011)</strong></p>
-<ul>
-  <li>Fixed bug: Foreign languages in file/folder names </li>
-  <li>Fixed bug: Async Create Account function failed </li>
-</ul>
-
-<p><strong>v1.5.6 (23 August 2011)</strong></p>
-<ul>
-  <li>Added Thumbnail function to get an images thumbnail </li>
-  <li>Removed the “hardcoded” Restsharp and Json.NET references and included the NuGet versions of them </li>
-</ul>
-
-<p><strong>v1.5.5 (20 July 2011)</strong></p>
-<ul>
-  <li>Added new Shares function to publicly share a file for a limited time (undocumented API method) </li>
-  <li>Changed the name of the Move/Copy Async methods to be more consistent with the rest of the naming (Move –&gt; MoveAsync, Copy –&gt; CopyAsync) </li>
-</ul>
+<p>If you have any questions about DropNet post a question on Stack Overflow - <a href="http://stackoverflow.com/questions/tagged/dropnet">http://stackoverflow.com/questions/tagged/dropnet</a></p>

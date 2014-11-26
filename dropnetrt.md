@@ -138,11 +138,4 @@ var resultsList = await client.Search("test", "/path-to-search");{% endhighlight
 <h3>Samples</h3>
 <p><em>coming soon</em></p>
 
-<h3>Upcoming features</h3>
-<p>Checkout the <a href="https://trello.com/b/VucrKwFE/dropnet">Trello board</a> to whats coming</p>
-
-<h3>Apps using DropNetRT</h3>
-<p>Here is a list of Apps using DropNetRT. If you have an app using it let me know (<a href="https://twitter.com/dkarzon">@dkarzon</a>).</p>
-<ul>
-	<li>BoxShot (as of v3.4)</li>
-</ul>
+<p>If you have any questions about DropNet post a question on Stack Overflow - <a href="http://stackoverflow.com/questions/tagged/dropnet">http://stackoverflow.com/questions/tagged/dropnet</a></p>
