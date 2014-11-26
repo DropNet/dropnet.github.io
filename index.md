@@ -22,7 +22,7 @@ layout: layout
     <span class="octicon octicon-link"></span><a href="/dropnetrt.html">DropNetRT</a>
 </h3>
 <p>
-    .NET 4.5, async/await, Windows Phone 8+ and WinRT (ARM and x86).
+    .NET 4.5, async/await, Windows Phone 8+ and WinRT.
 </p>
 
 <h3>

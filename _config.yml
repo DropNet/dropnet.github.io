@@ -1,0 +1,3 @@
+name: dropnet
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
