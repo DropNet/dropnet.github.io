@@ -24,3 +24,10 @@ layout: layout
 <p>
     .NET 4.5, async/await, Windows Phone 8+ and WinRT (ARM and x86).
 </p>
+
+<h3>
+    <span class="octicon octicon-link"></span>Samples
+</h3>
+<p>
+    <em>coming soon...</em>
+</p>
